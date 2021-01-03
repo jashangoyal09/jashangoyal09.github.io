@@ -51,14 +51,14 @@ $(document).ready(function(){
                 },
                 message: {
                     required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    minlength: "that's all? really?"
                 }
             },
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
+                    url:"https://formspree.io/f/mwkwreyz",
                     success: function() {
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
